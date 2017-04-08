@@ -1,0 +1,36 @@
+.header {
+	background-color: $primary;
+	background-image: url(../assets/images/headerTileableLight.png);
+	background-repeat: repeat-x;
+}
+
+.logo img {
+	width: 170px;
+	padding: 15px;
+}
+
+.headerLinks {
+	font-family: $archivo;
+	color: $primary;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+}
+
+.otherLinks {
+	margin: 0px 20px;
+}
+
+.otherLinks a:hover {
+	color: $quaternary;
+}
+
+.shopButton a {
+	padding: 10px 30px;
+	border: 2px solid $primary;
+	box-shadow: 0px 0px 3px $primary;
+	border-radius: 5px;
+}
+
+.shopButton:hover {
+	background-color: $tertiary;
+}

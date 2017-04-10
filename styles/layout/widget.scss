@@ -1,0 +1,32 @@
+.l-rightAlign {
+	text-align: right;
+}
+
+.l-widgetText {
+	padding: 30px 20px;
+}
+
+.l-widgetText p {
+	margin: 30px 5px 80px;
+}
+
+.l-widgetContent {
+    padding: 5px;
+}
+
+.l-widgetContainers {
+	display: flex;
+}
+
+.l-widget {
+	position: relative;
+}
+
+.l-readMoreButton {
+	position: absolute;
+	bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}

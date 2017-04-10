@@ -1,0 +1,19 @@
+.heroImg {
+	position: relative;
+}
+
+.heroImg img {
+	width: 100%;
+}
+
+.heroImg span {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	color: white;
+	text-align: right;
+	font-family: $julius;
+	font-size: 4em;
+	-webkit-font-smoothing: antialiased;
+	max-width: 500px;
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Header</title>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Pragati+Narrow:300,700|Julius+Sans+One|Source+Sans+Pro" rel="stylesheet">
@@ -10,11 +11,17 @@
 	<div class="headerGradient">
 		<div class="header l-header l-flex">
 
-			<div class="logo">
+			<div class="burger l-burger l-mobileOnly">
+				<img src="assets/images/BurgerIcon.png">
+			</div>
+
+			<div class="logo l-logo">
 				<a href="#"><img src="assets/images/Logo_Full.png"></a>
 			</div>
 
-			<div class="headerLinks l-flex">
+			<a href="#" class="mobileShop l-mobileOnly">Shop</a>
+
+			<div class="headerLinks l-flex l-desktopOnly">
 
 				<div class="shopButton">
 					<a href="#" class="shopLink">Shop</a>

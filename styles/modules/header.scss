@@ -1,58 +1,109 @@
-.headerGradient {
-	position: absolute;
-	width: 100%;
-	top: 0;
-	z-index: 1;
-
-	background: -webkit-linear-gradient(left,rgba(255,255,255,0.3),rgba(0,0,0,0.6)); /*Safari 5.1-6*/
-	background: -o-linear-gradient(right,rgba(255,255,255,0.3),rgba(0,0,0,0.6)); /*Opera 11.1-12*/
-	background: -moz-linear-gradient(right,rgba(255,255,255,0.3),rgba(0,0,0,0.6)); /*Fx 3.6-15*/
-	background: linear-gradient(to right, rgba(255,255,255,0.3), rgba(0,0,0,0.6)); /*Standard*/
+.header {
+	background-color: $primary;
+	display: flex;
 }
 
-.header {
-	background-image: url(../assets/images/headerBGOpacity.png);
-	background-repeat: repeat-x;
+.burger {
+	width: 80px;
+	cursor: pointer;
+}
+
+.burger img {
+	width: 100%;
+}
+
+.logo {
+	flex-grow: 2;
 }
 
 .logo img {
-	width: 170px;
-	padding: 15px;
+	width: 200px;
 }
 
-.headerLinks {
+.mobileShop {
+	background-color: $tertiary;
+	color: $white;
 	font-family: $pragati;
-	color: $primary;
-	font-size: 1.5em;
+	font-size: 2.5em;
+	-webkit-font-smoothing: antialiased;
 	text-transform: uppercase;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
+
 
 .otherLinks {
-	-webkit-font-smoothing: antialiased;
-	margin: 0px 20px;
+	display: none;
 }
 
-.otherLinks a {
-	transition: color 0.3s linear;
-}
 
-.otherLinks a:hover {
-	color: $tertiary;
-}
 
-.shopButton {
-	-webkit-font-smoothing: antialiased;
-}
+@media (min-width: 570px) {
+	.headerGradient {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		z-index: 1;
 
-.shopButton a {
-	border: 2px solid $primary;
-	border-radius: 5px;
-	padding: 0px 25px;
-	line-height: 0.5em;
-	-webkit-transition: color 0.3s ease, background-color 0.5s linear;
-}
+		background: -webkit-linear-gradient(left,rgba(255,255,255,0.3),rgba(0,0,0,0.6)); /*Safari 5.1-6*/
+		background: -o-linear-gradient(right,rgba(255,255,255,0.3),rgba(0,0,0,0.6)); /*Opera 11.1-12*/
+		background: -moz-linear-gradient(right,rgba(255,255,255,0.3),rgba(0,0,0,0.6)); /*Fx 3.6-15*/
+		background: linear-gradient(to right, rgba(255,255,255,0.3), rgba(0,0,0,0.6)); /*Standard*/
+	}
 
-.shopButton a:hover {
-	background-color: $primary;
-	color: $tertiary;
+	.header {
+		background-image: url(../assets/images/headerBGOpacity.png);
+		background-repeat: repeat-x;
+	}
+
+	.burger {
+		display: none;
+	}
+
+	.logo img {
+		width: 180px;
+		padding: 15px;
+	}
+
+
+
+	.headerLinks {
+		font-family: $pragati;
+		color: $primary;
+		font-size: 1.5em;
+		text-transform: uppercase;
+	}
+
+	.otherLinks {
+		-webkit-font-smoothing: antialiased;
+		margin: 0px 20px;
+	}
+
+	.otherLinks a {
+		transition: color 0.3s linear;
+	}
+
+	.otherLinks a:hover {
+		color: $tertiary;
+	}
+
+	.shopButton {
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.shopButton a {
+		border: 2px solid $primary;
+		border-radius: 5px;
+		padding: 0px 25px;
+		line-height: 0.5em;
+		-webkit-transition: color 0.3s ease, background-color 0.5s linear;
+	}
+
+	.shopButton a:hover {
+		background-color: $primary;
+		color: $tertiary;
+	}
 }

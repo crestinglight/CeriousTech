@@ -51,17 +51,41 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-.l-header {
-  padding: 0px 10px; }
+@media (min-width: 570px) {
+  .l-vertDivider {
+    margin-bottom: 50px; }
 
-.l-flex {
+  .l-bodyContent p {
+    margin-top: 1em; }
+
+  .l-bodyContent h1 {
+    margin-bottom: 1.3em; } }
+.l-header {
+  padding: 0; }
+
+.l-logo {
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  justify-content: center;
+  margin: 13px 0px 10px;
+  padding-right: 30px; }
 
 .l-headerLinkPadding a {
   padding: 10px 10px; }
 
+.l-desktopOnly {
+  display: none; }
+
+@media (min-width: 570px) {
+  .l-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+  .l-header {
+    padding: 0px 10px; }
+
+  .l-mobileOnly {
+    display: none; } }
 .l-heroImg {
   margin-bottom: 2px; }
 
@@ -78,7 +102,8 @@ html {
   padding: 5px; }
 
 .l-widgetContainers {
-  display: flex; }
+  display: flex;
+  margin-bottom: 80px; }
 
 .l-widget {
   position: relative; }
@@ -94,58 +119,127 @@ html {
 body {
   background-color: #424242; }
 
-.headerGradient {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  z-index: 1;
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
-  /*Safari 5.1-6*/
-  background: -o-linear-gradient(right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
-  /*Opera 11.1-12*/
-  background: -moz-linear-gradient(right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
-  /*Fx 3.6-15*/
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
-  /*Standard*/ }
+.bodyContent {
+  padding: 0px 100px; }
 
-.header {
-  background-image: url(../assets/images/headerBGOpacity.png);
-  background-repeat: repeat-x; }
-
-.logo img {
-  width: 170px;
-  padding: 15px; }
-
-.headerLinks {
-  font-family: "Pragati Narrow", sans-serif;
+.bodyContent h1 {
   color: #cacaca;
-  font-size: 1.5em;
-  text-transform: uppercase; }
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 3em;
+  text-align: center; }
 
-.otherLinks {
-  -webkit-font-smoothing: antialiased;
-  margin: 0px 20px; }
-
-.otherLinks a {
-  transition: color 0.3s linear; }
-
-.otherLinks a:hover {
-  color: #d33e08; }
-
-.shopButton {
+.bodyContent p {
+  color: #cacaca;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.1em;
   -webkit-font-smoothing: antialiased; }
 
-.shopButton a {
-  border: 2px solid #cacaca;
-  border-radius: 5px;
-  padding: 0px 25px;
-  line-height: 0.5em;
-  -webkit-transition: color 0.3s ease, background-color 0.5s linear; }
+.vertDivider {
+  height: 100px; }
 
-.shopButton a:hover {
+.outer {
+  width: 3px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  overflow: hidden; }
+
+.inner {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background: #cacaca;
+  top: 30%;
+  box-shadow: 0px 0px 30px 35px #cacaca; }
+
+.header {
   background-color: #cacaca;
-  color: #d33e08; }
+  display: flex; }
 
+.burger {
+  width: 80px;
+  cursor: pointer; }
+
+.burger img {
+  width: 100%; }
+
+.logo {
+  flex-grow: 2; }
+
+.logo img {
+  width: 200px; }
+
+.mobileShop {
+  background-color: #e55e04;
+  color: #f7f7f7;
+  font-family: "Pragati Narrow", sans-serif;
+  font-size: 2.5em;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.otherLinks {
+  display: none; }
+
+@media (min-width: 570px) {
+  .headerGradient {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
+    /*Safari 5.1-6*/
+    background: -o-linear-gradient(right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
+    /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
+    /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
+    /*Standard*/ }
+
+  .header {
+    background-image: url(../assets/images/headerBGOpacity.png);
+    background-repeat: repeat-x; }
+
+  .burger {
+    display: none; }
+
+  .logo img {
+    width: 180px;
+    padding: 15px; }
+
+  .headerLinks {
+    font-family: "Pragati Narrow", sans-serif;
+    color: #cacaca;
+    font-size: 1.5em;
+    text-transform: uppercase; }
+
+  .otherLinks {
+    -webkit-font-smoothing: antialiased;
+    margin: 0px 20px; }
+
+  .otherLinks a {
+    transition: color 0.3s linear; }
+
+  .otherLinks a:hover {
+    color: #e55e04; }
+
+  .shopButton {
+    -webkit-font-smoothing: antialiased; }
+
+  .shopButton a {
+    border: 2px solid #cacaca;
+    border-radius: 5px;
+    padding: 0px 25px;
+    line-height: 0.5em;
+    -webkit-transition: color 0.3s ease, background-color 0.5s linear; }
+
+  .shopButton a:hover {
+    background-color: #cacaca;
+    color: #e55e04; } }
 .heroImg {
   position: relative; }
 
@@ -186,7 +280,7 @@ body {
   font-family: "Pragati Narrow", sans-serif;
   color: #424242;
   font-size: 2em;
-  border-bottom: 3px solid #d33e08;
+  border-bottom: 3px solid #e55e04;
   line-height: 1em;
   padding-bottom: 10px; }
 
@@ -208,7 +302,7 @@ body {
 
 .readMoreButton a {
   display: inline-block;
-  border: 2px solid #d33e08;
+  border: 2px solid #e55e04;
   border-radius: 5px;
   padding: 10px 30px;
   -webkit-transition: color 0.3s ease, background-color 0.5s linear;
@@ -219,7 +313,7 @@ body {
   transform: scale(0.9, 1); }
 
 .readMoreButton a:hover {
-  background-color: #d33e08;
+  background-color: #e55e04;
   color: #cacaca; }
 
 hr {
@@ -227,12 +321,12 @@ hr {
   height: 1px;
   margin: 30px auto;
   width: 60%;
-  background: linear-gradient(to right, #cacaca, #d33e08, #cacaca);
-  background: -webkit-linear-gradient(left, #cacaca, #d33e08, #cacaca);
+  background: linear-gradient(to right, #cacaca, #e55e04, #cacaca);
+  background: -webkit-linear-gradient(left, #cacaca, #e55e04, #cacaca);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(left #cacaca, #d33e08, #cacaca);
+  background: -o-linear-gradient(left #cacaca, #e55e04, #cacaca);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(left #cacaca, #d33e08, #cacaca);
+  background: -moz-linear-gradient(left #cacaca, #e55e04, #cacaca);
   /* For Firefox 3.6 to 15 */ }
 
 /*# sourceMappingURL=styles.css.map */

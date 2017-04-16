@@ -1,0 +1,17 @@
+.mobileNav ul {
+	background-color: $tertiary;
+	border-top: 1px solid $white;
+}
+
+.mobileNav ul li {
+	color: $white;
+	font-family: $source;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	border-bottom: 1px solid $white;
+}
+
+.mobileNav ul li a {
+	padding: 20px 10px;
+	flex-grow: 1;
+}

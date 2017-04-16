@@ -1,0 +1,19 @@
+.l-mobileNav {
+	position: relative;
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 1s ease;
+}
+
+.l-mobileNav ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+}
+
+.l-mobileNav ul li {
+	display: flex;
+	flex-direction: column;
+}

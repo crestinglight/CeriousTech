@@ -118,6 +118,23 @@ html {
   left: 0;
   right: 0; }
 
+.l-mobileNav {
+  position: relative;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 1s ease; }
+
+.l-mobileNav ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%; }
+
+.l-mobileNav ul li {
+  display: flex;
+  flex-direction: column; }
+
 body {
   background-color: #424242; }
 
@@ -283,5 +300,20 @@ hr {
   /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left #cacaca, #e55e04, #cacaca);
   /* For Firefox 3.6 to 15 */ }
+
+.mobileNav ul {
+  background-color: #e55e04;
+  border-top: 1px solid #f7f7f7; }
+
+.mobileNav ul li {
+  color: #f7f7f7;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #f7f7f7; }
+
+.mobileNav ul li a {
+  padding: 20px 10px;
+  flex-grow: 1; }
 
 /*# sourceMappingURL=styles.css.map */

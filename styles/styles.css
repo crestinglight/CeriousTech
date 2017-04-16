@@ -51,23 +51,21 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-@media (min-width: 570px) {
-  .l-vertDivider {
-    margin-bottom: 50px; }
-
-  .l-bodyContent p {
-    margin-top: 1em; }
-
-  .l-bodyContent h1 {
-    margin-bottom: 1.3em; } }
 .l-header {
-  padding: 0; }
+  padding: 0;
+  display: flex;
+  justify-content: space-between; }
+
+.l-burger {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .l-logo {
   display: flex;
   justify-content: center;
   margin: 13px 0px 10px;
-  padding-right: 30px; }
+  flex-grow: 4; }
 
 .l-headerLinkPadding a {
   padding: 10px 10px; }
@@ -76,19 +74,23 @@ html {
   display: none; }
 
 @media (min-width: 570px) {
-  .l-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-
   .l-header {
     padding: 0px 10px; }
 
   .l-mobileOnly {
     display: none; } }
 .l-heroImg {
-  margin-bottom: 2px; }
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
+@media (min-width: 570px) {
+  .l-heroText {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    max-width: 500px; } }
 .l-rightAlign {
   text-align: right; }
 
@@ -158,17 +160,14 @@ body {
   display: flex; }
 
 .burger {
-  width: 80px;
   cursor: pointer; }
 
 .burger img {
-  width: 100%; }
-
-.logo {
-  flex-grow: 2; }
+  width: 50px;
+  padding-left: 10px; }
 
 .logo img {
-  width: 200px; }
+  width: 170px; }
 
 .mobileShop {
   background-color: #e55e04;
@@ -185,78 +184,34 @@ body {
 .otherLinks {
   display: none; }
 
-@media (min-width: 570px) {
-  .headerGradient {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
-    /*Safari 5.1-6*/
-    background: -o-linear-gradient(right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
-    /*Opera 11.1-12*/
-    background: -moz-linear-gradient(right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
-    /*Fx 3.6-15*/
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
-    /*Standard*/ }
-
-  .header {
-    background-image: url(../assets/images/headerBGOpacity.png);
-    background-repeat: repeat-x; }
-
-  .burger {
-    display: none; }
-
-  .logo img {
-    width: 180px;
-    padding: 15px; }
-
-  .headerLinks {
-    font-family: "Pragati Narrow", sans-serif;
-    color: #cacaca;
-    font-size: 1.5em;
-    text-transform: uppercase; }
-
-  .otherLinks {
-    -webkit-font-smoothing: antialiased;
-    margin: 0px 20px; }
-
-  .otherLinks a {
-    transition: color 0.3s linear; }
-
-  .otherLinks a:hover {
-    color: #e55e04; }
-
-  .shopButton {
-    -webkit-font-smoothing: antialiased; }
-
-  .shopButton a {
-    border: 2px solid #cacaca;
-    border-radius: 5px;
-    padding: 0px 25px;
-    line-height: 0.5em;
-    -webkit-transition: color 0.3s ease, background-color 0.5s linear; }
-
-  .shopButton a:hover {
-    background-color: #cacaca;
-    color: #e55e04; } }
 .heroImg {
-  position: relative; }
-
-.heroImg img {
+  position: relative;
+  background-image: url("../assets/images/ceriousHeroImg.png");
+  background-repeat: no-repeat;
+  background-size: auto 300px;
+  height: 300px;
   width: 100%; }
 
 .heroImg span {
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
   color: white;
-  text-align: right;
   font-family: "Julius Sans One", sans-serif;
-  font-size: 4em;
   -webkit-font-smoothing: antialiased;
-  max-width: 500px; }
+  font-size: 3em;
+  font-weight: bold;
+  max-width: 400px;
+  text-align: center;
+  text-shadow: 0 0 2px #424242; }
 
+@media (min-width: 570px) {
+  .heroImg img {
+    width: 100%; }
+
+  .heroImg span {
+    color: white;
+    text-align: right;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 4em;
+    -webkit-font-smoothing: antialiased; } }
 .widgetContainers::after {
   clear: both;
   content: "";

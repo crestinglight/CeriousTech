@@ -8,13 +8,19 @@
 <body>
 
 	<div class="headerGradient">
-		<div class="header l-header l-flex">
+		<div class="header l-header">
 
-			<div class="logo">
+			<div class="burger l-burger l-mobileOnly">
+				<img src="assets/images/BurgerIcon.png">
+			</div>
+
+			<div class="logo l-logo">
 				<a href="#"><img src="assets/images/Logo_Full.png"></a>
 			</div>
 
-			<div class="headerLinks l-flex">
+			<a href="#" class="mobileShop l-mobileOnly">Shop</a>
+
+			<div class="headerLinks l-flex l-desktopOnly">
 
 				<div class="shopButton">
 					<a href="#" class="shopLink">Shop</a>
@@ -25,15 +31,14 @@
 					<a href="#">Contact</a>
 				</div>
 			</div>
-
 		</div>
 	</div>
 
 	<div class="heroImg l-heroImg">
 
-		<img src="assets/images/ceriousHeroImg.png">
+		<img src="assets/images/ceriousHeroImg.png" class="l-desktopOnly">
 
-		<span>Tech we're Cerious about</span>
+		<span class="l-heroText">Tech we're Cerious about</span>
 	</div>
 
 	<div class="widgetContainers l-widgetContainers">

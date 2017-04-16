@@ -120,9 +120,7 @@ html {
 
 .l-mobileNav {
   position: relative;
-  max-height: 0px;
-  overflow: hidden;
-  transition: max-height 1s ease; }
+  overflow: hidden; }
 
 .l-mobileNav ul {
   position: absolute;
@@ -303,7 +301,11 @@ hr {
 
 .mobileNav ul {
   background-color: #e55e04;
-  border-top: 1px solid #f7f7f7; }
+  border-top: 1px solid #f7f7f7;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 .mobileNav ul li {
   color: #f7f7f7;

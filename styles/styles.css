@@ -51,6 +51,15 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+@media (min-width: 570px) {
+  .l-vertDivider {
+    margin-bottom: 50px; }
+
+  .l-bodyContent p {
+    margin-top: 1em; }
+
+  .l-bodyContent h1 {
+    margin-bottom: 1.3em; } }
 .l-header {
   padding: 0;
   display: flex;
@@ -199,6 +208,61 @@ body {
 .otherLinks {
   display: none; }
 
+@media (min-width: 570px) {
+  .headerGradient {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
+    /*Safari 5.1-6*/
+    background: -o-linear-gradient(right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
+    /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
+    /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
+    /*Standard*/ }
+
+  .header {
+    background-image: url(../assets/images/headerBGOpacity.png);
+    background-repeat: repeat-x; }
+
+  .burger {
+    display: none; }
+
+  .logo img {
+    width: 180px;
+    padding: 15px; }
+
+  .headerLinks {
+    font-family: "Pragati Narrow", sans-serif;
+    color: #cacaca;
+    font-size: 1.5em;
+    text-transform: uppercase; }
+
+  .otherLinks {
+    -webkit-font-smoothing: antialiased;
+    margin: 0px 20px; }
+
+  .otherLinks a {
+    transition: color 0.3s linear; }
+
+  .otherLinks a:hover {
+    color: #e55e04; }
+
+  .shopButton {
+    -webkit-font-smoothing: antialiased; }
+
+  .shopButton a {
+    border: 2px solid #cacaca;
+    border-radius: 5px;
+    padding: 0px 25px;
+    line-height: 0.5em;
+    -webkit-transition: color 0.3s ease, background-color 0.5s linear; }
+
+  .shopButton a:hover {
+    background-color: #cacaca;
+    color: #e55e04; } }
 .heroImg {
   position: relative;
   background-image: url("../assets/images/ceriousHeroImg.png");

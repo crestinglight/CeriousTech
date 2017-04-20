@@ -51,6 +51,12 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+.bodyContent.l-bodyContent {
+  padding: 0px 40px; }
+
+.l-bodyContent h1 {
+  margin-bottom: 20px; }
+
 @media (min-width: 570px) {
   .l-vertDivider {
     margin-bottom: 50px; }
@@ -110,14 +116,17 @@ html {
   margin: 30px 5px 80px; }
 
 .l-widgetContent {
-  padding: 5px; }
+  padding: 10px; }
 
 .l-widgetContainers {
   display: flex;
-  margin-bottom: 80px; }
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  margin: 30px 20px; }
 
 .l-widget {
-  position: relative; }
+  position: relative;
+  margin-bottom: 30px; }
 
 .l-readMoreButton {
   position: absolute;
@@ -142,6 +151,12 @@ html {
   display: flex;
   flex-direction: column; }
 
+.l-vertDivider {
+  margin-bottom: 30px; }
+
+@media (min-width: 570px) {
+  .l-vertDivider {
+    margin-bottom: 50px; } }
 body {
   background-color: #424242; }
 
@@ -298,7 +313,7 @@ body {
 
 .widget {
   background-color: #cacaca;
-  width: calc(33.33333% - 6.66667px);
+  width: calc(100% - 10px);
   float: left;
   margin-left: 5px; }
 
@@ -350,6 +365,12 @@ body {
   background-color: #e55e04;
   color: #cacaca; }
 
+@media (min-width: 570px) {
+  .widget {
+    background-color: #cacaca;
+    width: calc(33.33333% - 6.66667px);
+    float: left;
+    margin-left: 5px; } }
 hr {
   border: 0;
   height: 1px;

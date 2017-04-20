@@ -4,7 +4,7 @@
 
 .widget {
     background-color: $primary;
-    @include grid-column(4);
+    @include grid-column(12);
 }
 
 .widgetImage img {
@@ -61,4 +61,11 @@
 .readMoreButton a:hover {
     background-color: $tertiary;
     color: $primary;
+}
+
+@media (min-width: 570px) {
+    .widget {
+        background-color: $primary;
+        @include grid-column(4);
+    }
 }

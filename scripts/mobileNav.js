@@ -1,30 +1,37 @@
 window.addEventListener("load", function(){
-	var burgerIcon = document.getElementsByClassName("burger")[0];
-	burgerIcon.addEventListener("click", dropDown);
+	var burgerIcon = document.getElementsByClassName("burger");
 
+	for(var i = 0 ; i < burgerIcon.length; i++){
+		burgerIcon[i].addEventListener("click", dropDown);
+	}
+	
 	var dropDownContainer = document.getElementsByClassName("mobileNav")[0];
 	var dropDownMenu = document.getElementsByClassName("js-mobileUL")[0];
-	debugger;
 
 	function dropDown(){
 		if (dropDownMenu.style.maxHeight === "" || dropDownMenu.style.maxHeight === "0px"){
-			dropDownContainer.style.overflow = "visible";
+			
 			showDropDown();
 		}
 
 		else {
 			hideDropDown();
-			dropDownContainer.style.overflow = "hidden";
 		}
 	}
 
 	function showDropDown(){
-		
-		dropDownMenu.style.maxHeight = "300px";
+		dropDownContainer.style.overflow = "visible";
+		dropDownMenu.style.maxHeight = "500px";
 	}
 
 	function hideDropDown(){
-		
 		dropDownMenu.style.maxHeight = "0px";
+		hideBorder();
+	}
+
+	function hideBorder(){
+		setTimeout(function () {
+			dropDownContainer.style.overflow = "hidden";
+		}, 500);
 	}
 });

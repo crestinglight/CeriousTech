@@ -8,8 +8,11 @@
 }
 
 .burger img {
-	width: 50px;
-	padding-left: 10px;
+	width: 40px;
+}
+
+.burger.tinyOnly {
+	background-color: #424242;
 }
 
 .logo img {
@@ -24,9 +27,6 @@
 	-webkit-font-smoothing: antialiased;
 	text-transform: uppercase;
 	flex-grow: 1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 

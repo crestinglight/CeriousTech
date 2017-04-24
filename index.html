@@ -4,6 +4,7 @@
 	<title>Cerious Technologies</title>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Pragati+Narrow:400,700|Julius+Sans+One|Source+Sans+Pro" rel="stylesheet">
+	<script type="text/javascript" src="scripts/mobileNav.js"></script>
 </head>
 <body>
 
@@ -18,7 +19,11 @@
 				<a href="#"><img src="assets/images/Logo_Full.png"></a>
 			</div>
 
-			<a href="#" class="mobileShop l-mobileOnly">Shop</a>
+			<div class="burger l-burger l-tinyOnly tinyOnly">
+				<img src="assets/images/BurgerIconLight.png">
+			</div>
+
+			<a href="#" class="mobileShop l-mobileShop l-mobileOnly">Shop</a>
 
 			<div class="headerLinks l-flex l-desktopOnly">
 
@@ -32,6 +37,26 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="mobileNav l-mobileNav l-mobileOnly">
+		<ul class="js-mobileUL">
+			<li class="l-tinyOnly">
+				<a href="/shop">Shop</a>
+			</li>
+
+			<li>
+				<a href="/cables">Our Cables</a>
+			</li>
+
+			<li>
+				<a href="/about">About</a>
+			</li>
+
+			<li>
+				<a href="/contact">Contact</a>
+			</li>
+		</ul>
 	</div>
 
 	<div class="heroImg l-heroImg">
@@ -120,15 +145,22 @@
 	</div>
 
 	<div class="bodyContent l-bodyContent">
-		<h1>Graphene - The Way of the Future</h1>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus enim justo, ornare non tincidunt at, molestie et lacus. Etiam elementum arcu ut egestas tempus. Cras eleifend molestie felis, vulputate suscipit eros volutpat eget. Sed pulvinar aliquam arcu eu semper. Curabitur in consectetur mauris. Quisque dictum lectus leo, eget commodo justo lobortis ut. Curabitur finibus risus libero, efficitur convallis ex gravida a.</p>
+		<div class="grapheneArticle">
 
-		<p>Etiam bibendum eu justo non dapibus. Suspendisse commodo a dui sit amet pretium. Integer ac lectus lectus. Praesent ut varius nisi. Suspendisse vitae arcu dolor. Proin ut massa rhoncus urna ullamcorper consectetur. Ut sit amet neque ut nunc fermentum vestibulum. Vivamus sollicitudin eget mauris in aliquet. Nulla luctus sodales dui sit amet euismod.</p>
+			<h1>Graphene - The Way of the Future</h1>
 
-		<p>Fusce nunc neque, faucibus non lacinia in, cursus sit amet turpis. Suspendisse semper, ligula nec tempus euismod, leo neque luctus nisi, et dictum erat justo ac sapien. Vestibulum imperdiet nunc felis, eget ultricies purus iaculis quis. Aliquam non molestie libero. Pellentesque eu sagittis turpis, ac consectetur augue. Vivamus cursus mi in sollicitudin dapibus. Mauris ornare tristique magna vel lacinia. Sed maximus nibh non facilisis facilisis. Vestibulum nunc ipsum, hendrerit eu auctor nec, lobortis in urna. Proin pulvinar arcu urna, ut auctor tortor euismod id. Duis hendrerit aliquam augue ut ultrices. Donec in varius tortor. Phasellus a risus orci. Suspendisse aliquet, purus facilisis aliquet maximus, elit enim luctus enim, ac placerat orci sem eget neque. Curabitur quam turpis, hendrerit sed justo eu, mattis rhoncus elit. Praesent at lorem a dui egestas hendrerit.</p>
+			<p>Graphene is a material that is 200 times stronger than steel. Comprised of carbon and only one atom thick, graphene is the most highly conductive material in the world. The trouble is, graphene is still in the early development stage and no one has yet discovered how to make a continuous conductor out of it.</p>
 
+			<p>Our new line of cables, The <em>Graphene Extreme</em>, is the embodiment of all of our composite development capabilities. While solid conductors of graphene do not yet exist, our expertise lies in combining exotic materials to maximize the strengths of those materials, while minimizing their weaknesses. We use the unique characteristics of graphene to supercharge other materials and create composite conductors that the world has never experienced before.</p>
+		</div>
+
+		<div class="about l-about">
+
+			<h1>About</h1>
+
+			<p>Cerious Technologies is a family owned, family run, advanced materials company. We do not simply produce in house advanced materials in raw form, but we develop new materials and processes that have never existed before. We are a true composite developer.</p>
+		</div>
 	</div>
-
 </body>
 </html>
